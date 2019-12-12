@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des épisodes{% endblock %}
+
+{% block body %}
+    <section>
+        <h2>Saison N°{{ season.number }} de {{ program.title }}</h2>
+        <h4>{{ season.description }}</h4>
+        </div>
+        {% for episode in episodes %}
+            <div>
+                    <div>
+                        <h2 class="mt-0" href="#">{{ episode.number }} - {{ episode.title }}</h2>
+                        <p>{{ episode.summary }}</p>
+                        <a class="mt-0" href="{{ path('wild_episode', { 'id': episode.id }) }}">Détail de l'épisode</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+    <a href="{{ path('wild_index') }}" class="retour">
+        Voir toutes les séries
+    </a>
+{% endblock %}

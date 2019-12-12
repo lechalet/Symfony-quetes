@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Votre Série{% endblock %}
+
+{% block body %}
+    <section class="container-fluid media">
+        <h2 class="mt-0">{{ programName }}</h2>
+        {% for season in seasons %}
+            <div class="mt-5 px-3">
+                <div class="card mb-3 pt-3 col-xl-12 mx-auto">
+                    <div class="container-fluid">
+                        <h2 class="mt-0" href="#">Saison N°{{ season.number }} - {{ season.year }}</h2>
+                        <a class="mt-0" href="{{ path('wild_season', { 'id': season.id }) }}">Liste des épisodes</a>
+                        <p class="progsize">{{ season.description }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+    <a href="{{ path('wild_index') }}" class="retour">
+        Voir toutes les séries
+    </a>
+{% endblock %}

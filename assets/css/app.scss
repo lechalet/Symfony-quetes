@@ -1,0 +1,45 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color: royalblue;
+    color: black;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.progsize {
+    width: 250px;
+    height: 300px;
+    color: black;
+}
+
+.retour {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+a{
+    color:black;
+}
+
+.poster{
+    height: 15rem;
+    width: 10rem;
+}
+
+.summary{
+    text-align: justify;
+}
+
+$theme-colors: (
+        "primary": #790604,
+        "secondary": #C0C0C0,
+        "third" : #5b3c11,
+);
+
+$theme-colors : ( "custom-color" : #000000 );
+$theme-colors : ( "custom-color" : #FFFFFF );

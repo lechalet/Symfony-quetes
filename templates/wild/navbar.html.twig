@@ -1,0 +1,63 @@
+{% block nav %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <a class="navbar-brand" href="/">Acceuil</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('wild_index') }}">Séries</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Catégories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/wild/category/horreur">Horreur</a>
+                        <a class="dropdown-item" href="/wild/category/sciencefiction">Science-Fiction</a>
+                        <a class="dropdown-item" href="/wild/category/aventure">Aventure</a>
+                        <a class="dropdown-item" href="#">- Une nouvelle catégorie va arriver ! -</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Saisons
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/wild/series/the-walking-dead">The Walking Dead</a>
+                        <a class="dropdown-item" href="#">- Une nouvelle série va arriver ! -</a>
+                        <a class="dropdown-item" href="#">- Une nouvelle série va arriver ! -</a>
+                        <a class="dropdown-item" href="#">- Une nouvelle série va arriver ! -</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ajout
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ path('category_form') }}">Nouvelle catégorie</a>
+                        <a class="dropdown-item" href="{{ path('program_new') }}">Nouvelle série</a>
+                        <a class="dropdown-item" href="{{ path('season_new') }}">Nouvelle saison</a>
+                        <a class="dropdown-item" href="{{ path('episodes_new') }}">Nouvel épisode</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="{{ path('program_index') }}">Liste de toutes les séries</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="{{ path('season_index') }}">Liste de toutes les saisons</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="{{ path('episodes_index') }}">Liste de tous les épisodes</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="/actor">Tous nos acteurs</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="/actor/new">Nouvel(le) actreur(rice)</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+{% endblock %}

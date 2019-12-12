@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Episodes{% endblock %}
+
+{% block body %}
+    <h1>Episodes</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ episode.id }}</td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ episode.title }}</td>
+            </tr>
+            <tr>
+                <th>Number</th>
+                <td>{{ episode.number }}</td>
+            </tr>
+            <tr>
+                <th>Summary</th>
+                <td>{{ episode.summary }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('episodes_index') }}">back to list</a>
+
+    <a href="{{ path('episodes_edit', {'id': episode.id}) }}">edit</a>
+
+    {{ include('episodes/_delete_form.html.twig') }}
+{% endblock %}

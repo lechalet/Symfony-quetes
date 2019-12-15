@@ -65,7 +65,7 @@ class __TwigTemplate_6d1a39fd51361665a7f0edaadc727503fa8f295e5d078bb0da1a458a0ea
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Actor index";
+        echo "Index des acteurs";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -85,14 +85,14 @@ class __TwigTemplate_6d1a39fd51361665a7f0edaadc727503fa8f295e5d078bb0da1a458a0ea
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Actor index</h1>
+        echo "    <h1>Index des Acteurs</h1>
 
     <table class=\"table\">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Name</th>
-                <th>actions</th>
+                <th>Noms</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -116,11 +116,11 @@ class __TwigTemplate_6d1a39fd51361665a7f0edaadc727503fa8f295e5d078bb0da1a458a0ea
                     <a href=\"";
             // line 22
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("actor_show", ["id" => twig_get_attribute($this->env, $this->source, $context["actor"], "id", [], "any", false, false, false, 22)]), "html", null, true);
-            echo "\">show</a>
+            echo "\">Voir</a>
                     <a href=\"";
             // line 23
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("actor_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["actor"], "id", [], "any", false, false, false, 23)]), "html", null, true);
-            echo "\">edit</a>
+            echo "\">Editer</a>
                 </td>
             </tr>
         ";
@@ -129,7 +129,7 @@ class __TwigTemplate_6d1a39fd51361665a7f0edaadc727503fa8f295e5d078bb0da1a458a0ea
         if (!$context['_iterated']) {
             // line 27
             echo "            <tr>
-                <td colspan=\"3\">no records found</td>
+                <td colspan=\"3\">Rien a été trouvé</td>
             </tr>
         ";
         }
@@ -143,7 +143,7 @@ class __TwigTemplate_6d1a39fd51361665a7f0edaadc727503fa8f295e5d078bb0da1a458a0ea
     <a href=\"";
         // line 34
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("actor_new");
-        echo "\">Create new</a>
+        echo "\">Ajout nouveau</a>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -172,17 +172,17 @@ class __TwigTemplate_6d1a39fd51361665a7f0edaadc727503fa8f295e5d078bb0da1a458a0ea
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Actor index{% endblock %}
+{% block title %}Index des acteurs{% endblock %}
 
 {% block body %}
-    <h1>Actor index</h1>
+    <h1>Index des Acteurs</h1>
 
     <table class=\"table\">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Name</th>
-                <th>actions</th>
+                <th>Noms</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -191,19 +191,19 @@ class __TwigTemplate_6d1a39fd51361665a7f0edaadc727503fa8f295e5d078bb0da1a458a0ea
                 <td>{{ actor.id }}</td>
                 <td>{{ actor.name }}</td>
                 <td>
-                    <a href=\"{{ path('actor_show', {'id': actor.id}) }}\">show</a>
-                    <a href=\"{{ path('actor_edit', {'id': actor.id}) }}\">edit</a>
+                    <a href=\"{{ path('actor_show', {'id': actor.id}) }}\">Voir</a>
+                    <a href=\"{{ path('actor_edit', {'id': actor.id}) }}\">Editer</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan=\"3\">no records found</td>
+                <td colspan=\"3\">Rien a été trouvé</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a href=\"{{ path('actor_new') }}\">Create new</a>
+    <a href=\"{{ path('actor_new') }}\">Ajout nouveau</a>
 {% endblock %}
 ", "actor/index.html.twig", "/home/salazhar/Documents/Symfony/Symfonyquest-12/templates/actor/index.html.twig");
     }

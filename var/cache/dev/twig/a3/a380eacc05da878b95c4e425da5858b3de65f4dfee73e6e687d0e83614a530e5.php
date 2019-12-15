@@ -116,31 +116,28 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
         // line 42
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("episodes_new");
         echo "\">Nouvel épisode</a>
+                        <a class=\"dropdown-item\" href=\"/actor/new\">Nouvel(le) actreur(rice)</a>
                     </div>
                 </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"";
-        // line 46
+                <li class=\"nav-item dropdown\">
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Listes
+                    </a>
+                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                        <a class=\"dropdown-item\" href=\"";
+        // line 51
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("program_index");
         echo "\">Liste de toutes les séries</a>
-                </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"";
-        // line 49
+                        <a class=\"dropdown-item\" href=\"";
+        // line 52
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("season_index");
         echo "\">Liste de toutes les saisons</a>
-                </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"";
-        // line 52
+                        <a class=\"dropdown-item\" href=\"";
+        // line 53
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("episodes_index");
         echo "\">Liste de tous les épisodes</a>
-                </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"/actor\">Tous nos acteurs</a>
-                </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"/actor/new\">Nouvel(le) actreur(rice)</a>
+                        <a class=\"dropdown-item\" href=\"/actor\">Tous nos acteurs</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -161,7 +158,7 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
 
     public function getDebugInfo()
     {
-        return array (  136 => 52,  130 => 49,  124 => 46,  117 => 42,  113 => 41,  109 => 40,  105 => 39,  73 => 10,  63 => 2,  44 => 1,);
+        return array (  137 => 53,  133 => 52,  129 => 51,  117 => 42,  113 => 41,  109 => 40,  105 => 39,  73 => 10,  63 => 2,  44 => 1,);
     }
 
     public function getSourceContext()
@@ -208,22 +205,19 @@ class __TwigTemplate_b444b3e104f154ae20035f0aa48b76afc2cde8a6b2a928c5222bee95bf2
                         <a class=\"dropdown-item\" href=\"{{ path('program_new') }}\">Nouvelle série</a>
                         <a class=\"dropdown-item\" href=\"{{ path('season_new') }}\">Nouvelle saison</a>
                         <a class=\"dropdown-item\" href=\"{{ path('episodes_new') }}\">Nouvel épisode</a>
+                        <a class=\"dropdown-item\" href=\"/actor/new\">Nouvel(le) actreur(rice)</a>
                     </div>
                 </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"{{ path('program_index') }}\">Liste de toutes les séries</a>
-                </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"{{ path('season_index') }}\">Liste de toutes les saisons</a>
-                </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"{{ path('episodes_index') }}\">Liste de tous les épisodes</a>
-                </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"/actor\">Tous nos acteurs</a>
-                </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"/actor/new\">Nouvel(le) actreur(rice)</a>
+                <li class=\"nav-item dropdown\">
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Listes
+                    </a>
+                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                        <a class=\"dropdown-item\" href=\"{{ path('program_index') }}\">Liste de toutes les séries</a>
+                        <a class=\"dropdown-item\" href=\"{{ path('season_index') }}\">Liste de toutes les saisons</a>
+                        <a class=\"dropdown-item\" href=\"{{ path('episodes_index') }}\">Liste de tous les épisodes</a>
+                        <a class=\"dropdown-item\" href=\"/actor\">Tous nos acteurs</a>
+                    </div>
                 </li>
             </ul>
         </div>

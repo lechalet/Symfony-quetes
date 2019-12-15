@@ -104,31 +104,31 @@ class __TwigTemplate_b8ccd2e7d05f0843ace4626cb42c44f78d08b2d66b6114abb7e6592ea64
         echo "</td>
             </tr>
             <tr>
-                <th>Summary</th>
-                <td>";
-        // line 20
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["program"]) || array_key_exists("program", $context) ? $context["program"] : (function () { throw new RuntimeError('Variable "program" does not exist.', 20, $this->source); })()), "summary", [], "any", false, false, false, 20), "html", null, true);
-        echo "</td>
-            </tr>
-            <tr>
                 <th>Poster</th>
-                <td>";
-        // line 24
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["program"]) || array_key_exists("program", $context) ? $context["program"] : (function () { throw new RuntimeError('Variable "program" does not exist.', 24, $this->source); })()), "poster", [], "any", false, false, false, 24), "html", null, true);
-        echo "</td>
+                <td><img src=\"";
+        // line 20
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["program"]) || array_key_exists("program", $context) ? $context["program"] : (function () { throw new RuntimeError('Variable "program" does not exist.', 20, $this->source); })()), "poster", [], "any", false, false, false, 20), "html", null, true);
+        echo "\"</td>
             </tr>
             <tr>
                 <th>Country</th>
                 <td>";
-        // line 28
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["program"]) || array_key_exists("program", $context) ? $context["program"] : (function () { throw new RuntimeError('Variable "program" does not exist.', 28, $this->source); })()), "country", [], "any", false, false, false, 28), "html", null, true);
+        // line 24
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["program"]) || array_key_exists("program", $context) ? $context["program"] : (function () { throw new RuntimeError('Variable "program" does not exist.', 24, $this->source); })()), "country", [], "any", false, false, false, 24), "html", null, true);
         echo "</td>
             </tr>
             <tr>
                 <th>Year</th>
                 <td>";
+        // line 28
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["program"]) || array_key_exists("program", $context) ? $context["program"] : (function () { throw new RuntimeError('Variable "program" does not exist.', 28, $this->source); })()), "year", [], "any", false, false, false, 28), "html", null, true);
+        echo "</td>
+            </tr>
+            <tr>
+                <th>Summary</th>
+                <td>";
         // line 32
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["program"]) || array_key_exists("program", $context) ? $context["program"] : (function () { throw new RuntimeError('Variable "program" does not exist.', 32, $this->source); })()), "year", [], "any", false, false, false, 32), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["program"]) || array_key_exists("program", $context) ? $context["program"] : (function () { throw new RuntimeError('Variable "program" does not exist.', 32, $this->source); })()), "summary", [], "any", false, false, false, 32), "html", null, true);
         echo "</td>
             </tr>
         </tbody>
@@ -223,12 +223,8 @@ class __TwigTemplate_b8ccd2e7d05f0843ace4626cb42c44f78d08b2d66b6114abb7e6592ea64
                 <td>{{ program.title }}</td>
             </tr>
             <tr>
-                <th>Summary</th>
-                <td>{{ program.summary }}</td>
-            </tr>
-            <tr>
                 <th>Poster</th>
-                <td>{{ program.poster }}</td>
+                <td><img src=\"{{ program.poster }}\"</td>
             </tr>
             <tr>
                 <th>Country</th>
@@ -237,6 +233,10 @@ class __TwigTemplate_b8ccd2e7d05f0843ace4626cb42c44f78d08b2d66b6114abb7e6592ea64
             <tr>
                 <th>Year</th>
                 <td>{{ program.year }}</td>
+            </tr>
+            <tr>
+                <th>Summary</th>
+                <td>{{ program.summary }}</td>
             </tr>
         </tbody>
     </table>

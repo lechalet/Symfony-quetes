@@ -12,7 +12,7 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* wild/navbar.html.twig */
+/* /wild/navbar.html.twig */
 class __TwigTemplate_8d93ca148ab4cc50bee40200d14ad3b1e4246c44f4da03d1075bcb6c9366b514 extends \Twig\Template
 {
     private $source;
@@ -35,10 +35,10 @@ class __TwigTemplate_8d93ca148ab4cc50bee40200d14ad3b1e4246c44f4da03d1075bcb6c936
     {
         $macros = $this->macros;
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "wild/navbar.html.twig"));
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/wild/navbar.html.twig"));
 
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "wild/navbar.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "/wild/navbar.html.twig"));
 
         // line 1
         $this->displayBlock('nav', $context, $blocks);
@@ -116,31 +116,28 @@ class __TwigTemplate_8d93ca148ab4cc50bee40200d14ad3b1e4246c44f4da03d1075bcb6c936
         // line 42
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("episodes_new");
         echo "\">Nouvel épisode</a>
+                        <a class=\"dropdown-item\" href=\"/actor/new\">Nouvel(le) actreur(rice)</a>
                     </div>
                 </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"";
-        // line 46
+                <li class=\"nav-item dropdown\">
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Listes
+                    </a>
+                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                        <a class=\"dropdown-item\" href=\"";
+        // line 51
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("program_index");
         echo "\">Liste de toutes les séries</a>
-                </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"";
-        // line 49
+                        <a class=\"dropdown-item\" href=\"";
+        // line 52
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("season_index");
         echo "\">Liste de toutes les saisons</a>
-                </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"";
-        // line 52
+                        <a class=\"dropdown-item\" href=\"";
+        // line 53
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("episodes_index");
         echo "\">Liste de tous les épisodes</a>
-                </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"/actor\">Tous nos acteurs</a>
-                </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"/actor/new\">Nouvel(le) actreur(rice)</a>
+                        <a class=\"dropdown-item\" href=\"/actor\">Tous nos acteurs</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -156,12 +153,12 @@ class __TwigTemplate_8d93ca148ab4cc50bee40200d14ad3b1e4246c44f4da03d1075bcb6c936
 
     public function getTemplateName()
     {
-        return "wild/navbar.html.twig";
+        return "/wild/navbar.html.twig";
     }
 
     public function getDebugInfo()
     {
-        return array (  136 => 52,  130 => 49,  124 => 46,  117 => 42,  113 => 41,  109 => 40,  105 => 39,  73 => 10,  63 => 2,  44 => 1,);
+        return array (  137 => 53,  133 => 52,  129 => 51,  117 => 42,  113 => 41,  109 => 40,  105 => 39,  73 => 10,  63 => 2,  44 => 1,);
     }
 
     public function getSourceContext()
@@ -208,27 +205,24 @@ class __TwigTemplate_8d93ca148ab4cc50bee40200d14ad3b1e4246c44f4da03d1075bcb6c936
                         <a class=\"dropdown-item\" href=\"{{ path('program_new') }}\">Nouvelle série</a>
                         <a class=\"dropdown-item\" href=\"{{ path('season_new') }}\">Nouvelle saison</a>
                         <a class=\"dropdown-item\" href=\"{{ path('episodes_new') }}\">Nouvel épisode</a>
+                        <a class=\"dropdown-item\" href=\"/actor/new\">Nouvel(le) actreur(rice)</a>
                     </div>
                 </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"{{ path('program_index') }}\">Liste de toutes les séries</a>
-                </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"{{ path('season_index') }}\">Liste de toutes les saisons</a>
-                </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"{{ path('episodes_index') }}\">Liste de tous les épisodes</a>
-                </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"/actor\">Tous nos acteurs</a>
-                </li>
-                <li>
-                    <a class=\"dropdown-item\" href=\"/actor/new\">Nouvel(le) actreur(rice)</a>
+                <li class=\"nav-item dropdown\">
+                    <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Listes
+                    </a>
+                    <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                        <a class=\"dropdown-item\" href=\"{{ path('program_index') }}\">Liste de toutes les séries</a>
+                        <a class=\"dropdown-item\" href=\"{{ path('season_index') }}\">Liste de toutes les saisons</a>
+                        <a class=\"dropdown-item\" href=\"{{ path('episodes_index') }}\">Liste de tous les épisodes</a>
+                        <a class=\"dropdown-item\" href=\"/actor\">Tous nos acteurs</a>
+                    </div>
                 </li>
             </ul>
         </div>
     </nav>
 {% endblock %}
-", "wild/navbar.html.twig", "/home/salazhar/Documents/Symfony/Symfonyquest-12/templates/wild/navbar.html.twig");
+", "/wild/navbar.html.twig", "/home/salazhar/Documents/Symfony/Symfonyquest-12/templates/wild/navbar.html.twig");
     }
 }

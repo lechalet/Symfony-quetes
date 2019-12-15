@@ -85,7 +85,7 @@ class __TwigTemplate_c604937398616b15087f83a8381754202139ff9f7fe0d4f63571540b388
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Actor</h1>
+        echo "    <h1>Acteurs</h1>
 
     <table class=\"table\">
         <tbody>
@@ -97,14 +97,14 @@ class __TwigTemplate_c604937398616b15087f83a8381754202139ff9f7fe0d4f63571540b388
         echo "</td>
             </tr>
             <tr>
-                <th>Name</th>
+                <th>Nom</th>
                 <td>";
         // line 16
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["actor"]) || array_key_exists("actor", $context) ? $context["actor"] : (function () { throw new RuntimeError('Variable "actor" does not exist.', 16, $this->source); })()), "name", [], "any", false, false, false, 16), "html", null, true);
         echo "</td>
             </tr>
             <tr>
-                <th>Series list</th>
+                <th>Liste des séries</th>
                 <td>
                     ";
         // line 21
@@ -141,12 +141,12 @@ class __TwigTemplate_c604937398616b15087f83a8381754202139ff9f7fe0d4f63571540b388
     <a href=\"";
         // line 33
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("actor_index");
-        echo "\">back to list</a>
+        echo "\">Retour à la Liste</a>
 
     <a href=\"";
         // line 35
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("actor_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["actor"]) || array_key_exists("actor", $context) ? $context["actor"] : (function () { throw new RuntimeError('Variable "actor" does not exist.', 35, $this->source); })()), "id", [], "any", false, false, false, 35)]), "html", null, true);
-        echo "\">edit</a>
+        echo "\">Editer</a>
 
     ";
         // line 37
@@ -183,7 +183,7 @@ class __TwigTemplate_c604937398616b15087f83a8381754202139ff9f7fe0d4f63571540b388
 {% block title %}Actor{% endblock %}
 
 {% block body %}
-    <h1>Actor</h1>
+    <h1>Acteurs</h1>
 
     <table class=\"table\">
         <tbody>
@@ -192,11 +192,11 @@ class __TwigTemplate_c604937398616b15087f83a8381754202139ff9f7fe0d4f63571540b388
                 <td>{{ actor.id }}</td>
             </tr>
             <tr>
-                <th>Name</th>
+                <th>Nom</th>
                 <td>{{ actor.name }}</td>
             </tr>
             <tr>
-                <th>Series list</th>
+                <th>Liste des séries</th>
                 <td>
                     {% for program in actor.programs %}
                         <a href=\"{{ path('program_show', {'id': program.id}) }}\">
@@ -210,9 +210,9 @@ class __TwigTemplate_c604937398616b15087f83a8381754202139ff9f7fe0d4f63571540b388
         </tbody>
     </table>
 
-    <a href=\"{{ path('actor_index') }}\">back to list</a>
+    <a href=\"{{ path('actor_index') }}\">Retour à la Liste</a>
 
-    <a href=\"{{ path('actor_edit', {'id': actor.id}) }}\">edit</a>
+    <a href=\"{{ path('actor_edit', {'id': actor.id}) }}\">Editer</a>
 
     {{ include('actor/_delete_form.html.twig') }}
 {% endblock %}

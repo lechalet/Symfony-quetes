@@ -40,22 +40,19 @@
                         <a class="dropdown-item" href="{{ path('program_new') }}">Nouvelle série</a>
                         <a class="dropdown-item" href="{{ path('season_new') }}">Nouvelle saison</a>
                         <a class="dropdown-item" href="{{ path('episodes_new') }}">Nouvel épisode</a>
+                        <a class="dropdown-item" href="/actor/new">Nouvel(le) actreur(rice)</a>
                     </div>
                 </li>
-                <li>
-                    <a class="dropdown-item" href="{{ path('program_index') }}">Liste de toutes les séries</a>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="{{ path('season_index') }}">Liste de toutes les saisons</a>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="{{ path('episodes_index') }}">Liste de tous les épisodes</a>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="/actor">Tous nos acteurs</a>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="/actor/new">Nouvel(le) actreur(rice)</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Listes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ path('program_index') }}">Liste de toutes les séries</a>
+                        <a class="dropdown-item" href="{{ path('season_index') }}">Liste de toutes les saisons</a>
+                        <a class="dropdown-item" href="{{ path('episodes_index') }}">Liste de tous les épisodes</a>
+                        <a class="dropdown-item" href="/actor">Tous nos acteurs</a>
+                    </div>
                 </li>
             </ul>
         </div>
